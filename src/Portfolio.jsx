@@ -60,7 +60,7 @@ const TECH = {
   WordPress: ["WordPress", "Elementor", "PHP", "Responsive"],
   "Custom code": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
 };
-const IN_PROGRESS = ["Deevyam", "Vastuvann", "Khandelwal Gift Mart"];
+const IN_PROGRESS = ["Deevyam", "Khandelwal Gift Mart"];
 const FLOATERS = [
   { n: "WordPress", ic: "globe", c: "#21759B", pos: "-right-2 sm:-right-10 top-6", an: "sk-float" },
   { n: "Shopify", ic: "bag", c: "#5E8E3E", pos: "-left-2 sm:-left-12 top-[38%]", an: "sk-float2" },
