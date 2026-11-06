@@ -28,10 +28,10 @@ const NAV = [
 const SKILLS = [
   ["CMS & platforms", ["Shopify", "WordPress", "Elementor"]],
   ["Front-end", ["HTML5", "CSS3", "JavaScript", "Bootstrap", "React", "Tailwind CSS"]],
-  ["Backend & logic", ["Liquid", "PHP (basics)", "Java"]],
+  ["Backend & logic", ["Liquid", "PHP (basics)"]],
   ["Version control", ["Git", "GitHub"]],
   ["E-commerce", ["Theme setup", "Store customization", "UX optimization", "Payment gateways"]],
-  ["Design & AI tools", ["Canva", "Graphic design", "ChatGPT", "AI prompting"]],
+  ["Design & AI tools", ["Canva", "Graphic design", "ChatGPT"]],
 ];
 
 const PROJECTS = [
