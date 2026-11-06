@@ -317,7 +317,7 @@ export default function Portfolio() {
 
   const stats = [
     [`${PROJECTS.length}`, "Websites delivered"],
-    ["1.7 yrs", "Professional experience"],
+    ["1.9 yrs", "Professional experience"],
     [`${count("Shopify")}`, "Shopify stores"],
     [`${count("WordPress")}`, "WordPress sites"],
   ];
