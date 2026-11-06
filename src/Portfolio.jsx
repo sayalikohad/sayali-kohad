@@ -378,7 +378,7 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-3 gap-5">
           <div className="sk-card p-6 sm:p-8 md:col-span-2">
             <p className="leading-relaxed" style={{ color: "var(--muted)" }}>
-              I'm a Shopify and WordPress developer with 1.7 years of professional experience in end-to-end e-commerce
+              I'm a Shopify and WordPress developer with 1.9 years of professional experience in end-to-end e-commerce
               store setup, custom theme development and responsive website engineering. I work with Liquid, PHP, HTML5,
               CSS3, JavaScript and Bootstrap.
             </p>
