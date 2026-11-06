@@ -1,5 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
+/* ------------------------------------------------------------------
+   SAYALI KOHAD – PORTFOLIO (single file)
+   Needs: React + Tailwind (v3 or v4). No other packages.
+   Put your photo at  public/sayali.jpg   (falls back to "SK" if missing)
+   Put your resume at public/Sayali_Kohad_Resume.pdf (you already have it)
+   Usage: in App.jsx →  import Portfolio from "./Portfolio"; <Portfolio />
+------------------------------------------------------------------- */
+
 const ADBORN = "https://adbornsolutions.com/";
 const PHOTO = "/sayali.jpeg";
 const RESUME = "/Sayali_Kohad_Resume.pdf";
@@ -33,6 +41,7 @@ const PROJECTS = [
   { n: "Vastuvann", t: "Shopify", u: "https://vastuvann.com/", d: "Luxury home décor platform with high-resolution visual sections, interactive banners and customized theme templates." },
   { n: "Khandelwal Gift Mart", t: "Shopify", u: "https://khandelwal-gift-mart.myshopify.com/", d: "Gift shop web store with tailored category structures and simple checkout navigation." },
   { n: "Scentalay", t: "Shopify", u: "https://www.scentalay.com/", d: "Fragrance brand store with clean visuals and full mobile responsiveness." },
+  { n: "Samarth Agri Tourism", t: "WordPress", u: "https://samarthagritourism.com/", d: "Agri tourism and water park website with attraction pages, ticket pricing, a booking section and a responsive layout built with Elementor." },
   { n: "Strokes Design Studio", t: "WordPress", u: "https://strokesdesignstudio.com/", d: "Creative agency portfolio with work galleries, client testimonials and inquiry forms." },
   { n: "Divine Spaces by Studio 88", t: "WordPress", u: "https://divinespacesbystudio88.com/", d: "Interior and spatial design studio site with dynamic project showcases and responsive galleries." },
   { n: "Studio 88 by MPI", t: "WordPress", u: "https://studio88bympi.com/", d: "Architecture and interior design portfolio with seamless cross-device responsiveness." },
@@ -95,7 +104,7 @@ const Icon = ({ name, className = "w-5 h-5" }) => (
   </svg>
 );
 
-/* ---------- theme tokens (sage + cream, like the reference) ---------- */
+/* ---------- theme tokens (blue + violet, light & dark) ---------- */
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@400;500;600&display=swap');
 @property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
@@ -355,9 +364,9 @@ export default function Portfolio() {
             </div>
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2 text-sm" style={{ color: "var(--muted)" }}>
               <span className="inline-flex items-center gap-1.5"><Icon name="pin" className="w-4 h-4" /> Nagpur, Maharashtra</span>
-         <a href={ADBORN} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:underline underline-offset-4">
-  <Icon name="bag" className="w-4 h-4" /> Adborn Solutions
-</a>
+              <a href={ADBORN} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:underline underline-offset-4">
+                <Icon name="bag" className="w-4 h-4" /> Adborn Solutions
+              </a>
             </div>
           </div>
         </div>
@@ -415,15 +424,9 @@ export default function Portfolio() {
           <div className="flex flex-wrap items-start justify-between gap-2">
             <div>
               <h3 className="serif text-2xl">Shopify &amp; WordPress Developer</h3>
-             <a
-  href={ADBORN}
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex items-center gap-1 underline-offset-4 hover:underline"
-  style={{ color: "var(--accent)" }}
->
-  Adborn Solutions
-</a>
+              <a href={ADBORN} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline-offset-4 hover:underline" style={{ color: "var(--accent)" }}>
+                Adborn Solutions <Icon name="arrow" className="w-4 h-4" />
+              </a>
             </div>
             <span className="sk-chip">March 2025 – Present</span>
           </div>
