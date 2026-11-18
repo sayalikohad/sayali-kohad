@@ -471,7 +471,7 @@ export default function Portfolio() {
                     <span className="sk-btn px-3 py-1 text-xs shrink-0">{p.t}</span>
                   </div>
                   <span className="sk-chip mt-3 self-start !py-1 !text-xs" style={{ color: wip ? "var(--accent)" : "var(--muted)" }}>
-                    {wip ? "In Development" : "Completed"}
+                    {wip ? "In Development" : "Completed"}npm run dev
                   </span>
                   <p className="mt-3 text-sm leading-relaxed flex-1" style={{ color: "var(--muted)" }}>{p.d}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
