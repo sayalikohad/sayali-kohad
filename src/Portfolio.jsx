@@ -39,7 +39,7 @@ const PROJECTS = [
   { n: "Keauty Beauty", t: "Shopify", u: "https://keautybeauty.in/", d: "Cosmetics store with an interactive catalog, multi-step checkout and optimized image loading for faster pages." },
   { n: "Deevyam", t: "Shopify", u: "https://deevyam.com/", d: "Premium store for brass pooja essentials and home décor with responsive layouts and a smooth shopping flow." },
   { n: "Vastuvann", t: "Shopify", u: "https://vastuvann.com/", d: "Luxury home décor platform with high-resolution visual sections, interactive banners and customized theme templates." },
-  { n: "Khandelwal Gift Mart", t: "Shopify", u: "https://khandelwal-gift-mart.myshopify.com/", d: "Gift shop web store with tailored category structures and simple checkout navigation." },
+  { n: "Khandelwal Gift Mart", t: "Shopify", u: "https://khandelwalgiftmart.com/", d: "Gift shop web store with tailored category structures and simple checkout navigation." },
   { n: "Scentalay", t: "Shopify", u: "https://www.scentalay.com/", d: "Fragrance brand store with clean visuals and full mobile responsiveness." },
   { n: "Samarth Agri Tourism", t: "WordPress", u: "https://samarthagritourism.com/", d: "Agri tourism and water park website with attraction pages, ticket pricing, a booking section and a responsive layout built with Elementor." },
   { n: "Strokes Design Studio", t: "WordPress", u: "https://strokesdesignstudio.com/", d: "Creative agency portfolio with work galleries, client testimonials and inquiry forms." },
@@ -60,7 +60,7 @@ const TECH = {
   WordPress: ["WordPress", "Elementor", "PHP", "Responsive"],
   "Custom code": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
 };
-const IN_PROGRESS = ["Deevyam", "Khandelwal Gift Mart"];
+const IN_PROGRESS = []; 
 const FLOATERS = [
   { n: "WordPress", ic: "globe", c: "#21759B", pos: "-right-2 sm:-right-10 top-6", an: "sk-float" },
   { n: "Shopify", ic: "bag", c: "#5E8E3E", pos: "-left-2 sm:-left-12 top-[38%]", an: "sk-float2" },
@@ -342,7 +342,7 @@ export default function Portfolio() {
                   <span className="serif text-6xl" style={{ color: "var(--accent)" }}>SK</span>
                 )}
               </div>
-            </div>
+            </div>  
             {FLOATERS.map(({ n, ic, c, pos, an }) => (
               <span key={n} className={`sk-badge ${an} absolute ${pos}`}>
                 <span style={{ color: c }}><Icon name={ic} className="w-4 h-4" /></span> {n}
@@ -435,7 +435,7 @@ export default function Portfolio() {
               <li key={d} className="flex gap-3 leading-relaxed" style={{ color: "var(--muted)" }}>
                 <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{ background: "var(--accent)" }} />
                 {d}
-              </li>
+              </li> 
             ))}
           </ul>
         </div>
@@ -591,8 +591,7 @@ export default function Portfolio() {
                     target={href.startsWith("http") ? "_blank" : undefined}
                     rel="noreferrer"
                     className="w-11 h-11 rounded-full grid place-items-center transition-transform hover:-translate-y-0.5"
-                    style={{ background: "var(--card)", border: "1px solid var(--line)", boxShadow: "var(--shadow)" }}
-                  >
+                    style={{ background: "var(--card)", border: "1px solid var(--line)", boxShadow: "var(--shadow)" }}    >
                     <Icon name={ic} className="w-5 h-5" />
                   </a>
                 ))}
