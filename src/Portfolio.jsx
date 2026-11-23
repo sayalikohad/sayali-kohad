@@ -48,9 +48,12 @@ const PROJECTS = [
   { n: "The Supreme Decor", t: "WordPress", u: "https://thesupremedecor.com/", d: "Home décor showcase with structured product catalogs and optimized navigation." },
   { n: "EcoHygenix", t: "Custom code", u: "https://ecohygenix.com/", d: "Hand-coded site for hygiene and sanitation solutions using HTML, CSS, JavaScript and Bootstrap." },
   { n: "Mini Miracles Play School", t: "Custom code", u: "https://minimiraclesplayschool.com/", d: "Custom front end for a play school with course info, photo galleries and enrollment workflows." },
+  { n: "CRL Transport", t: "React JS", u: "https://www.crl-transport.com/", d: "Responsive transport and logistics website built with React, with a clean homepage layout and clear service sections." },
+  { n: "AHPL Exports", t: "React JS", u: "https://www.ahplexports.com/", d: "Export company website connecting global buyers with Indian home decor, handicrafts and industrial products, built with React." },
+  { n: "Stroke Design", t: "React JS", u: "https://stroke-design.vercel.app/", d: "Design studio website built with React, with a modern responsive layout, deployed on Vercel." },
 ];
 
-const FILTERS = ["All", "Shopify", "WordPress", "Custom code"];
+const FILTERS = ["All", "Shopify", "WordPress", "React JS", "Custom code"];
 
 /* EmailJS keys – get them from https://dashboard.emailjs.com */
 const EMAILJS = { service: "YOUR_SERVICE_ID", template: "YOUR_TEMPLATE_ID", publicKey: "YOUR_PUBLIC_KEY" };
@@ -58,6 +61,7 @@ const EMAILJS = { service: "YOUR_SERVICE_ID", template: "YOUR_TEMPLATE_ID", publ
 const TECH = {
   Shopify: ["Shopify", "Liquid", "JavaScript", "Responsive"],
   WordPress: ["WordPress", "Elementor", "PHP", "Responsive"],
+  "React JS": ["React", "JavaScript", "CSS3", "Responsive"],
   "Custom code": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
 };
 const IN_PROGRESS = []; 
